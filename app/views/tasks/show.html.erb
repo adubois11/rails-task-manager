@@ -1,0 +1,13 @@
+<%= @task.title %>
+
+<p><strong>Détails :</strong> <%= @task.details %></p>
+
+<p>
+  <% if @task.completed %>
+    <strong>Statut :</strong> Completed
+  <% else %>
+    <strong>Statut :</strong> Not completed
+  <% end %>
+</p>
+
+<%= link_to 'Retour à la liste des tâches', tasks_path %>
